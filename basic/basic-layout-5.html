@@ -6,7 +6,18 @@
     <title>Basic Layout 5</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-
+       body {
+          display: grid;
+          grid-gap: 1em;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+        }
+        header, main, footer {
+          grid-column: 2 / 5;
+        }
+        nav {
+          grid-column: 1 / 4;
+        }
     </style>
   </head>
   <body id="basic-layout-5">
